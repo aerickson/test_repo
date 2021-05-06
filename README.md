@@ -2,12 +2,24 @@
 
 Used for testing pre-commit hooks and other automations.
 
-abc123
+## usage with pre-commit
 
-http://google.com
+```
+# install pre-commit
+pip3 install pre-commit
 
-http:// aa a . bab//akjaks  # malformed are fine
+# in root of this repo
+pre-commit install
 
-http:// baa d link 2/  # doesn't catch malformed
+# run on all files with verbose
+pre-commit run --all --verbose
 
-http://aldfalsdf.adf.asdf.asdf/blah
+# testing commit blocking on failure:
+# 1. change a file (add a bad URL to see a failure)
+vi test_file
+# 2. stage the changed file
+git add test_file
+# 3. try to commit the file. it should fail if a bad URL was added.
+git commit -m 'test'
+
+```
