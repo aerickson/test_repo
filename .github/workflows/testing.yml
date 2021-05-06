@@ -1,11 +1,11 @@
 # Run pre-commit on all commits.
 
-name: Pre-Commit
+name: Testing
 
 on: [push, pull_request]
 
 jobs:
-  deploy:
+  run_precommit:
 
     runs-on: ubuntu-latest
 
