@@ -5,6 +5,9 @@
 # - should be installed via `pip install -r requirements-dev.txt`
 
 repos:
+-   repo: meta
+    hooks:
+    -   id: identity
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
     hooks:
@@ -30,6 +33,3 @@ repos:
     rev: c5a7107a07bf7a8851924704e06edfbcf9b57f35
     hooks:
     -   id: urlchecker
--   repo: meta
-    hooks:
-    -   id: identity
