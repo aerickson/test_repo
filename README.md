@@ -4,7 +4,7 @@ Used for testing pre-commit hooks and other automations.
 
 ## usage with pre-commit
 
-```
+```bash
 # install pre-commit
 pip3 install pre-commit
 
