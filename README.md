@@ -8,7 +8,9 @@ Used for testing pre-commit hooks and other automations.
 # install pre-commit
 pip3 install pre-commit
 
-# in root of this repo
+# the following commands should be done in the root of this repo
+
+# install this repo's pre-commit hooks
 pre-commit install
 
 # run on all files with verbose
@@ -23,5 +25,6 @@ vi test_file
 git add test_file
 # 3. try to commit the file. it should fail if a bad URL was added.
 git commit -m 'test'
-
+# 4. try committing anyways by bypassing the hooks
+git commit -m 'test' -n
 ```
