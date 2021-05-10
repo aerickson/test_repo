@@ -13,6 +13,9 @@ pip3 install pre-commit
 # install this repo's pre-commit hooks
 pre-commit install
 
+# see that no files are checked unless they're staged (or in -a/-all mode)
+pre-commit run
+
 # run on all files with verbose
 pre-commit run --all --verbose
 # It should complain about bad urls in bad.txt.
