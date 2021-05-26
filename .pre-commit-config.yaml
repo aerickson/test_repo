@@ -35,7 +35,7 @@ repos:
     hooks:
     -   id: urlchecker
         # below are optional. override the config in the repo
-        entry: urlchecker check_ci --exclude-pattern "http://excluded_domain.faah"
+        entry: urlchecker check_ci --exclude-patterns "excluded_domain.faaah"
         #types_or: [markdown, json]
         exclude: |
           (?x)^(
