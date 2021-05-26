@@ -16,11 +16,6 @@ pre-commit install
 # see that no files are checked unless they're staged (or in -a/-all mode)
 pre-commit run
 
-# run on all files with verbose
-pre-commit run --all --verbose
-# It should complain about bad urls in bad.txt.
-# - Commit was possible with 'git commit -n' to skip pre-commit hooks.
-
 # testing commit blocking on failure:
 # 1. change a file (add a bad URL to see a failure)
 vi test_file
