@@ -36,7 +36,7 @@ repos:
     -   id: urlchecker
         # below are optional. override the config in the repo
         entry: urlchecker check_ci --exclude-pattern "http://excluded_domain.faah"
-        types_or: [markdown, json]
+        #types_or: [markdown, json]
         exclude: |
           (?x)^(
               version.json|
