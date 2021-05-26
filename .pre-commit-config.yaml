@@ -29,7 +29,8 @@ repos:
 #     hooks:
 #     - id: urlchecker
 # r2
+# r3 now
 -   repo: https://github.com/aerickson/urlchecker-python
-    rev: 0cf3f3181228fd621407e4d00eda5f9281831564
+    rev: 88549367e9a99013d46635df5c697e2d2ad85670
     hooks:
     -   id: urlchecker
